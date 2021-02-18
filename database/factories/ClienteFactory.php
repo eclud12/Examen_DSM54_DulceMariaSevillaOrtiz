@@ -22,11 +22,11 @@ class ClienteFactory extends Factory
     public function definition()
     {
         return [
-            'nombre',
-            'direccion',
-            'telefono',
-            'status',
-            'tipo',
+            'nombre'=> $this->faker->nombre,
+            'direccion'=> $this->faker->direccion,
+            'telefono'=> $this->faker->telefono,
+            'status'=> $this->faker->status,
+            'tipo'=> $this->faker->tipo,
         ];
     }
 }
